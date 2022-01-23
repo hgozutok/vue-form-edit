@@ -28,6 +28,12 @@ const routes = [
 
     component: () => import("../views/Login.vue"),
   },
+   {
+    path: "/parentview",
+    name: "ParentView",
+
+    component: () => import("../views/ParentView.vue"),
+  },
 ];
 
 const router = createRouter({

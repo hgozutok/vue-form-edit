@@ -1,13 +1,11 @@
 <template>
   <Navigation />
 
-  <div class="flex top-0 w-full h-full"></div>
+  <div class="flex top-0 w-full h-full bg-gray-600"></div>
   <h1 class="text-5xl font-normal leading-normal mt-0 mb-2 text-pink-800">
     Register
   </h1>
-  <div
-    class="flex content-center items-center justify-center h-full bg-gray-500"
-  >
+  <div class="flex content-center items-center justify-center h-full">
     <form @submit.prevent="register">
       <div class="mb-3 pt-0">
         <label class="text-bold" for="name"> Name </label>

@@ -51,31 +51,33 @@
           md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0
         "
       >
+        <router-link to="/" class="text-gray-100 hover:text-indigo-400"
+          >Home</router-link
+        >
+        <router-link to="/about" class="text-gray-100 hover:text-indigo-400"
+          >About</router-link
+        >
+        <router-link to="/about" class="text-gray-100 hover:text-indigo-400"
+          >Blogs</router-link
+        >
         <router-link
-          to="/"
-       
+          to="/ParentView"
           class="text-gray-100 hover:text-indigo-400"
-          >Home</router-link>
-     <router-link
-          to="/about"
-          class="text-gray-100 hover:text-indigo-400">About</router-link>
-        <router-link
-          to="/about" class="text-gray-100 hover:text-indigo-400">Blogs</router-link>
-        <router-link
-          to="/about" class="text-gray-100 hover:text-indigo-400">Contact Us</router-link>
-           <router-link
-          to="/register" class="text-gray-100 hover:text-indigo-400">Register</router-link>
-                
-                 <router-link
-          to="/login" class="text-gray-100 hover:text-indigo-400">Login</router-link>
-           
-             
-             </div>
+          >Contact Us</router-link
+        >
+        <router-link to="/register" class="text-gray-100 hover:text-indigo-400"
+          >Register</router-link
+        >
+
+        <router-link to="/login" class="text-gray-100 hover:text-indigo-400"
+          >Login</router-link
+        >
+      </div>
     </nav>
   </div>
 </template>
 <script>
-import { ref } from 'vue';
+import { ref } from "vue";
 export default {
   setup() {
     let showMenu = ref(false);
