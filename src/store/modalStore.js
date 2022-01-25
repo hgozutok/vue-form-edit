@@ -5,6 +5,8 @@ export const modalModule = {
     isShow: false,
     title: "",
     content: "",
+
+    selectedButton: "",
   },
   computed: {
     isShow() {
@@ -15,6 +17,9 @@ export const modalModule = {
   mutations: {
     setIsShow(state, isShow) {
       state.isShow = isShow;
+      isShow === true
+        ? (state.selectedButton = "")
+        : (state.selectedButton = "");
     },
     setTitle(state, title) {
       state.title = title;
@@ -25,9 +30,16 @@ export const modalModule = {
 
     setIsShowTrue(state) {
       state.isShow = true;
+      state.isShow === true
+        ? (state.selectedButton = "")
+        : (state.selectedButton = "");
     },
     setIsShowFalse(state) {
       state.isShow = false;
+    },
+
+    setSelectedButton(state, selectedButton) {
+      state.selectedButton = selectedButton;
     },
   },
   actions: {
@@ -47,6 +59,9 @@ export const modalModule = {
     },
     setContent(context, content) {
       context.commit("setContent", content);
+    },
+    setSelectedButton(context, selectedButton) {
+      context.commit("setSelectedButton", selectedButton);
     },
   },
   modules: {},

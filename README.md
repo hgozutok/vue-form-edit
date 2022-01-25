@@ -1,24 +1,11 @@
-# vue-form-edit
+Vue.js
 
-## Project setup
-```
-npm install
-```
+Backend C# FoodApi https://github.com/hgozutok/FoodOrderingApi
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Mobile app in flutter https://github.com/hgozutok/food_ordering_flutter
 
-### Compiles and minifies for production
-```
-npm run build
-```
+Used repositories
 
-### Lints and fixes files
-```
-npm run lint
-```
+vuex, router,
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+tailwindcss heroicons headlessui
