@@ -5,7 +5,7 @@
     Hello world!
   </h1>
   </div>
-</template>
+</template> 
 
 <script>
 export default {
